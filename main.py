@@ -3,7 +3,7 @@ import pandas as pd
 from pydantic import BaseModel, Field
 
 from ml.data import apply_label, process_data
-from ml.model import inference, load_model
+from ml.model import load_model
 
 
 # DO NOT MODIFY
@@ -57,15 +57,15 @@ async def post_inference(data: Data):
     data = pd.DataFrame.from_dict(data)
 
     cat_features = [
-    "workclass",
-    "education",
-    "marital-status",
-    "occupation",
-    "relationship",
-    "race",
-    "sex",
-    "native-country",
-    ]  # noqa: F841
+        "workclass",
+        "education",
+        "marital-status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "native-country",
+        ]   # noqa: F841
 
     data_processed, _, _, _ = process_data(
         # your code here
