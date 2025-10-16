@@ -65,7 +65,7 @@ async def post_inference(data: Data):
         "race",
         "sex",
         "native-country",
-        ]   # noqa: F841
+    ]  # noqa: F841
 
     data_processed, _, _, _ = process_data(
         # your code here

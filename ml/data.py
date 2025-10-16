@@ -75,5 +75,4 @@ def apply_label(inference):
     if inference[0] == 1:
         return ">50K"
     elif inference[0] == 0:
-        return "<=50K"
-    
+        return "<=50K"    
